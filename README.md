@@ -39,8 +39,9 @@ Make sure to have the required dependencies, including torch, installed.
 // main.go 
 const token = "YOU_BOT_TOKEN"
 ```
+2. Download the model weights from [here](https://drive.usercontent.google.com/download?id=1ao1ovG1Qtx4b7EoskHXmi2E9rp5CHLcZ&authuser=0) and put the file in `./saved_models/u2net/u2net.pth`.
 
-2. Run both Golang and Python services:
+3. Run both Golang and Python services:
 
 -   **Golang Service:**
 
@@ -53,10 +54,10 @@ const token = "YOU_BOT_TOKEN"
 	cd model-service
 	python u2net_test.py
 ```
-3.  In your Telegram app, start a chat with the bot.
+4.  In your Telegram app, start a chat with the bot.
     
-4.  Send an image file to the bot.
+5.  Send an image file to the bot.
 
-5.  The bot will process the image and send back the edited version with the background removed.
+6.  The bot will process the image and send back the edited version with the background removed.
 ## Acknowledgments
 This project integrates a background removal model implemented in Python, sourced from [model-repository-link](https://github.com/xuebinqin/U-2-Net) .
